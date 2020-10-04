@@ -5,7 +5,7 @@ async def handler(request):
     userAgent = request.headers.get(hdrs.USER_AGENT, "Anonymous")
     date = datetime.now().strftime("%Y-%m-%d")
 
-    return web.Response(text=f'Current date is: {date}, \nyour browser is: {userAgent}')
+    return web.Response(text=f'Current date is: {date}. \n\nYour agent is: {userAgent}.')
 
 
 if __name__ == "__main__":
